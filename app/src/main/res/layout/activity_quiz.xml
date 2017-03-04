@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+android:background="#F5F5F5">
+
+
+    <ProgressBar
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:progress="10"
+        android:id="@+id/progressBar4" />
+
+    <!-- Question timer -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar4"
+        android:text="50"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginRight="15dp"
+        />
+
+    <!-- Question number indicator -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/progressBar4"
+        android:textColor="#424242"
+        android:id="@+id/questionnumber"
+        android:text="Question 1 out of 10"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/cardRadio"
+
+        android:layout_above="@+id/b4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+
+
+        >
+        <RadioGroup
+            android:layout_above="@id/b4"
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            >
+            <RadioButton
+                android:id="@+id/radi1"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option A"
+                android:textColor="#212121"
+                android:textSize="18dp"/>
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#212121"
+                android:text="Option B" />
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#212121"
+                android:layout_height="wrap_content"
+                android:text="Option C" />
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#212121"
+                android:textSize="18dp"
+                android:text="Option D"/>
+
+        </RadioGroup>
+    </android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardQuestion"
+    android:layout_margin="10dp"
+android:layout_below="@id/questionnumber"
+
+    android:layout_above="@id/cardRadio">
+     <!-- Question -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:textColor="#424242"
+        android:textAlignment="center"
+        android:id="@+id/text_question"
+        android:text="The tree sends down roots from its branches to the soil is know as:"
+
+        android:textSize="20dp"
+        android:layout_below="@+id/progressBar4"
+        android:layout_alignParentStart="true" />
+</android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="10dp"  android:layout_marginRight="8dp"
+        android:id="@+id/b4"
+
+        android:stateListAnimator="@null"
+        android:text="Next"
+         android:layout_gravity="bottom"
+        />
+
+
+
+
+
+
+</RelativeLayout>
