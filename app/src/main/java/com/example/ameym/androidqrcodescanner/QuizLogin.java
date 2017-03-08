@@ -24,7 +24,7 @@ public class QuizLogin extends AppCompatActivity {
             public void onClick(View view) {
                 res = myDb.getAllData(1);
                 System.out.println(editTextPass.getText().toString());
-                if(editTextPass.getText().toString().equals("1234")){
+                if(editTextPass.getText().toString().equals("2456")){
 
                     Intent intent = new Intent(getApplicationContext(),QuizActivity.class);
                     startActivity(intent);
